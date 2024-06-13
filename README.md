@@ -6,7 +6,7 @@ You can either self-host tunneling server on any machine accessible from lab cli
 
 Run:
 ```
-docker run -it --init --rm --network host -p 7835:7835 -p 8991:8991 ekzhang/bore server
+docker run --name bore -d --init --network host -p 7835:7835 -p 8991:8991 ekzhang/bore server
 ```
 
 ## Hosting tunneling server using Oracle Cloud Free Tier
